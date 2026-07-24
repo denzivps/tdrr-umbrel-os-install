@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: media-tools-tdarr
+name: Tdarr
+tagline: Automatische video- en audioconversie voor je mediabibliotheek
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/tdarr.png
+category: Media
+version: "2.0.0"
+port: 8265
+description: >-
+  Tdarr analyseert en verwerkt je video- en audiobibliotheek automatisch met
+  FFmpeg en HandBrake. Stel regels in om bestanden te remuxen, te converteren
+  of te optimaliseren, en gebruik de ingebouwde worker om direct te beginnen.
+
+
+  Plaats media die Tdarr mag verwerken in de map media van deze app. Let op:
+  een transcode kan bronbestanden vervangen; test je workflow daarom eerst met
+  een kopie van je bestanden.
+developer: HaveAGitGat
+website: https://tdarr.io
+submitter: Media Tools
+submission: https://github.com/HaveAGitGat/Tdarr
+repo: https://github.com/HaveAGitGat/Tdarr
+support: https://github.com/HaveAGitGat/Tdarr/issues
+gallery: []
+releaseNotes: >-
+  Eerste versie van Tdarr in de Media Tools App Store.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

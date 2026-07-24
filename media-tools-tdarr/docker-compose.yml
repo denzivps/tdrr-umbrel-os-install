@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: media-tools-tdarr_server_1
+      APP_PORT: 8265
+
+  server:
+    image: ghcr.io/haveagitgat/tdarr:latest
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ}
+      PUID: "1000"
+      PGID: "1000"
+      UMASK_SET: "002"
+      serverIP: "0.0.0.0"
+      serverPort: "8266"
+      webUIPort: "8265"
+      internalNode: "true"
+      inContainer: "true"
+      ffmpegVersion: "7"
+      nodeName: "Umbrel internal node"
+    volumes:
+      - ${APP_DATA_DIR}/server:/app/server
+      - ${APP_DATA_DIR}/configs:/app/configs
+      - ${APP_DATA_DIR}/logs:/app/logs
+      - ${APP_DATA_DIR}/media:/media
+      - ${APP_DATA_DIR}/transcode-cache:/temp

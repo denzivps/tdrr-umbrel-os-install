@@ -1,5 +1,7 @@
 ## Media Tools App Store
 
+```https://github.com/denzivps/tdrr-umbrel-os-install```
+
 Deze Umbrel Community App Store bevat Tdarr: een tool die mediabestanden automatisch analyseert, remuxt en transcodeert.
 
 Voeg na het publiceren van deze repository de GitHub-URL toe in de App Store van Umbrel. Installeer daarna **Tdarr** uit de Media Tools App Store.
